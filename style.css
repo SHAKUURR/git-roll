@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-color: #4f5f6e;
+  color: #fff;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.container {
+  margin: 10rem 6rem;
+  margin-bottom: 4rem;
+  background-color: #4f5f6e;
+}
+
+.techie {
+  font-size: 5rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1.8rem;
+
+}
+
+.techie-p {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.welcome {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 8rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input {
+  width: 40%;
+  padding: 1rem;
+  border-radius: .5rem;
+  font-size: 1.5rem;
+  outline: none;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  border: none;
+}
+
+.form input::placeholder {
+  font-size: 1.5rem;
+}
+
+.form button {
+  padding: 1.2rem 3rem;
+  margin-left: .4rem;
+  border-radius: .5rem;
+  background-color: #14141b;
+  color: #8d99a5;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  border: none;
+}
+
+.notFound {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-style: italic;
+  display: none;
+}
+
+.card {
+  background-color: #14141b;
+  color: #fff;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 2rem;
+  padding: 5rem 3rem;
+  text-align: center;
+  margin-top: 4rem;
+  height: 55rem;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  border: 5px solid #37517e;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -5rem;
+  background-image: url(108751084.png);
+  background-position: center;
+  background-size: cover;
+  display: block;
+}
+
+.name {
+  word-break: normal;
+  font-size: 4rem;
+}
+
+.location {
+  font-size: 1.8rem;
+  margin-top: 1.8rem;
+}
+
+.profile-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 7rem;
+  text-align: center;
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+
+.detail p {
+  font-size: 1.5rem;
+  color: #9fabb6;
+  margin-bottom: 1.2rem;
+}
+
+.detail h3 {
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+}
+
+.download {
+  background-color: #14141b;
+  color: #8d99a5;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border-radius: .5rem;
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  margin: 5rem auto;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 1s;
+}
+
+footer {
+  padding-bottom: 1rem;
+}
+
+footer p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+footer a {
+  color: #fdfff5;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 64em) {
+  .card {
+    width: 50%;
+
+  }
+}
+
+@media only screen and (max-width: 56em) {
+  .card {
+    width: 60%;
+  }
+
+  .form input {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 48.6875em) {
+  .card {
+    width: 80%;
+  }
+
+  .form input {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .card {
+    width: 90%;
+  }
+
+  .form input {
+    width: 70%;
+  }
+
+  .profile-detail {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 33.1875em) {
+  .card {
+    width: 100%;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .techie {
+    font-size: 4rem;
+  }
+
+}
+
+@media only screen and (max-width: 30.6875em) {
+  html {
+    font-size: 50%;
+  }
+
+  .card {
+    height: 65rem;
+  }
+
+  .name {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 22em) {
+  .profile-detail {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detail {
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    height: 70rem;
+  }
+}
