@@ -206,11 +206,11 @@ footer a {
 
 @media only screen and (max-width: 37.5em) {
   .card {
-    width: 90%;
+    width: 100%;
   }
 
   .form input {
-    width: 70%;
+    width: 100%;
   }
 
   .profile-detail {
@@ -220,16 +220,11 @@ footer a {
 }
 
 @media only screen and (max-width: 33.1875em) {
-  .card {
-    width: 100%;
-  }
 
-  .form input {
-    width: 100%;
-  }
 
   .techie {
-    font-size: 4rem;
+    font-size: 6rem;
+    text-align: center;
   }
 
 }
